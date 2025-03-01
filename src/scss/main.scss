@@ -1,0 +1,12 @@
+/* Main CSS */
+
+/* Import tailwind */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import SCSS Directories */
+
+@import "./globals/index";
+@import "./variables/index";

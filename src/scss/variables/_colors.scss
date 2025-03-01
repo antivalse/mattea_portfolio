@@ -1,0 +1,30 @@
+/* Color Variables */
+
+$colors: (
+  primary: (
+    50: #f6f4f0,
+  ),
+  secondary: (),
+);
+
+@each $color, $value in map-get($colors, primary) {
+  .bg-p#{$color} {
+    background-color: $value;
+  }
+}
+@each $color, $value in map-get($colors, secondary) {
+  .bg-s#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color, $value in map-get($colors, primary) {
+  .color-p#{$color} {
+    color: $value;
+  }
+}
+@each $color, $value in map-get($colors, secondary) {
+  .color-s#{$color} {
+    color: $value;
+  }
+}
