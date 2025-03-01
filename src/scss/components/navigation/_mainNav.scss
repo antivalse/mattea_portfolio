@@ -1,0 +1,15 @@
+/* Imports from Components Folder */
+
+@import "../../globals/fonts";
+
+.navbar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &__logo {
+    font-family: $elika-gorica;
+    font-size: 14rem;
+  }
+}

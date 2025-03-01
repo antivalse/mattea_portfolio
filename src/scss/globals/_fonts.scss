@@ -1,0 +1,18 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Elika Gorica";
+  src: url("/fonts/Elika Gorica Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brice Semi-Bold";
+  src: url("/fonts/Brice SemiBold SemiExpanded.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$elika-gorica: "Elika Gorica", Arial, Helvetica, sans-serif;
+$brice: "Brice", Arial, Helvetica, sans-serif;

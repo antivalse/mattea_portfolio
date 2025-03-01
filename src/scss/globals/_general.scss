@@ -1,8 +1,10 @@
 /* General Styles */
 
 @use "../variables/colors" as c;
+@import "../globals/fonts";
 
 $primary-50: map-get(map-get(c.$colors, primary), 50);
+$primary-100: map-get(map-get(c.$colors, primary), 100);
 
 * {
   box-sizing: border-box;
@@ -18,7 +20,8 @@ body {
   margin: 0 auto;
   max-width: 1600px;
   min-height: 100vh;
-  //font-family: $josefin-sans;
+  font-family: $brice;
+  color: $primary-100;
   &::-webkit-scrollbar {
     display: none; // For Chrome, Safari, and Edge
   }
