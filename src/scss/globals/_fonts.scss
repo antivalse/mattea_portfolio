@@ -14,5 +14,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $elika-gorica: "Elika Gorica", Arial, Helvetica, sans-serif;
 $brice: "Brice", Arial, Helvetica, sans-serif;
+$roboto: "Roboto", Arial, Helvetica, sans-serif;
