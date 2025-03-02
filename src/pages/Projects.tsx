@@ -10,7 +10,7 @@ const ProjectsPage = () => {
   }, []);
   return (
     <div id="projects" className="page-container">
-      Projects
+      <h1 className="header header--page">projects</h1>
     </div>
   );
 };

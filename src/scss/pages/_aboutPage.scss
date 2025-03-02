@@ -9,6 +9,6 @@ $primary-100: map-get(map-get(c.$colors, primary), 100);
 .about-container {
   background-color: $primary-100;
   color: $primary-50;
-  width: 80%;
+  width: 50%;
   border-radius: 1.25rem;
 }

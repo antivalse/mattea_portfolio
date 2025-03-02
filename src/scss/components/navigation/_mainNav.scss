@@ -1,6 +1,9 @@
 /* Imports from Components Folder */
 
+@use "../../variables/colors" as c;
 @import "../../globals/fonts";
+
+$primary-100: map-get(map-get(c.$colors, primary), 100);
 
 .navbar {
   height: 100vh;
@@ -16,5 +19,33 @@
 
   &__links {
     font-family: $roboto;
+
+    &__link {
+      position: relative;
+      transition: color 0.3s ease;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: $primary-100;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        color: $primary-100;
+
+        &::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+    }
   }
 }

@@ -20,7 +20,7 @@ const MainNavbar = () => {
           {navbarLinks.map((link) => (
             <li
               key={link.id}
-              className="m-5"
+              className="navbar__links__link m-5"
               onClick={() => scrollToDiv(link.title.toLowerCase())}
             >
               <Link to={link.href}>{link.title}</Link>

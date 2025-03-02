@@ -6,6 +6,15 @@
 $primary-50: map-get(map-get(c.$colors, primary), 100);
 $secondary-100: map-get(map-get(c.$colors, secondary), 100);
 
+.header {
+  &--page {
+    color: $primary-50;
+    font-family: $elika-gorica;
+    font-size: 10rem;
+    font-style: italic;
+  }
+}
+
 .body {
   &--primary {
     font-family: $brice;

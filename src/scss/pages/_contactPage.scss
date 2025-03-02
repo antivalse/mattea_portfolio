@@ -1,0 +1,13 @@
+/*Contact Page Styles*/
+
+@use "../variables/colors" as c;
+@import "../globals/fonts";
+
+$primary-50: map-get(map-get(c.$colors, primary), 100);
+$secondary-100: map-get(map-get(c.$colors, secondary), 100);
+
+.contact-container {
+  background-color: $primary-100;
+  color: $primary-50;
+  border-radius: 1.25rem;
+}
