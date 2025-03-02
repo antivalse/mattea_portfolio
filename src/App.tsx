@@ -1,5 +1,7 @@
 import MainNavbar from "./components/navigation/MainNavbar";
-import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/About";
+import ContactPage from "./pages/Contact";
+import ProjectsPage from "./pages/Projects";
 import "./scss/main.scss";
 
 import { Route, Routes } from "react-router-dom";
@@ -9,7 +11,9 @@ function App() {
     <div id="root">
       <MainNavbar />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
     </div>
   );
