@@ -1,6 +1,7 @@
 /* Main Navbar Component */
 
 import { Link } from "react-router-dom";
+import scrollToDiv from "../../helpers/scrollToDiv";
 
 const MainNavbar = () => {
   const navbarLinks = [
@@ -17,7 +18,11 @@ const MainNavbar = () => {
         <p className="uppercase">front-end developer</p>
         <ul className="navbar__links uppercase flex mt-10">
           {navbarLinks.map((link) => (
-            <li key={link.id} className="m-5">
+            <li
+              key={link.id}
+              className="m-5"
+              onClick={() => scrollToDiv(link.title.toLowerCase())}
+            >
               <Link to={link.href}>{link.title}</Link>
             </li>
           ))}
