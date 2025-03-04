@@ -1,40 +1,41 @@
 /* Contact Page */
 
-import { Link } from "react-router-dom";
+import { linkArrow } from "../assets/images/icons";
+import BackToHomePage from "../components/navigation/BackToHomePage";
 import scrollToDiv from "../helpers/scrollToDiv";
-
 import { useEffect } from "react";
 
 const ContactPage = () => {
-  // const linkArrow = (
-  //   <svg
-  //     xmlns="http://www.w3.org/2000/svg"
-  //     width="52"
-  //     height="52"
-  //     viewBox="0 0 52 52"
-  //     fill="none"
-  //   >
-  //     <path
-  //       d="M4 0V8H38.36L0 46.36L5.64 52L44 13.64V48H52V0H4Z"
-  //       fill="#F6F4F0"
-  //     />
-  //   </svg>
-  // );
-
   useEffect(() => {
     scrollToDiv("contact");
   }, []);
 
+  const contactLinks = [
+    { name: "Github", url: "https://github.com/antivalse" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/mattea-saxell-597012163/",
+    },
+  ];
+
   return (
-    <div id="contact" className="page-container">
+    <div className="page-container">
       <h1 className="header header--page">let's talk</h1>
-      <div className="contact-container grid grid-cols-1 md:grid-cols-3 place-items-center p-8 gap-8">
-        <ul className="flex justify-center col-span-3">
-          <li>
-            <Link to="github.com/antivalse">Github /</Link>
+      <ul className="flex justify-between gap-20">
+        {contactLinks.map(({ name, url }, index) => (
+          <li key={index} className="link link--large">
+            <a
+              href={url}
+              target="_blank"
+              className="flex items-center gap-1 m-0 p-0"
+            >
+              {name} <span className="ml-3">{linkArrow}</span>
+            </a>
           </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
+      <div id="contact"></div>
+      <BackToHomePage />
     </div>
   );
 };
