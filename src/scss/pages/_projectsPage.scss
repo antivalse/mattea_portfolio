@@ -1,0 +1,38 @@
+/* Projects Page Styles */
+
+@use "../variables/colors" as c;
+@import "../globals/fonts";
+
+$primary-50: map-get(map-get(c.$colors, primary), 50);
+$primary-100: map-get(map-get(c.$colors, primary), 100);
+$secondary-50: map-get(map-get(c.$colors, secondary), 50);
+
+.projects {
+  &__card {
+    background-color: $secondary-50;
+    color: $primary-100;
+    width: 20rem;
+    height: 25rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    font-family: "Courier New", Courier, monospace;
+    img {
+      width: 100%;
+      height: 10em;
+      object-fit: cover;
+    }
+    a {
+      border: 0.5px solid $primary-100;
+      border-radius: 1rem;
+      padding: 0.5rem 0.5rem;
+      margin: 0 auto;
+      transition: border-color 0.3s ease, background-color 0.3s ease,
+        color 0.3s ease;
+
+      &:hover {
+        border-color: darken($primary-100, 15%);
+        background-color: darken($primary-50, 1%);
+        color: darken($primary-100, 20%);
+      }
+    }
+  }
+}

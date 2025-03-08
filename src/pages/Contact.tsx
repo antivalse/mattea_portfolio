@@ -1,7 +1,7 @@
 /* Contact Page */
 
 import { linkArrow } from "../assets/images/icons";
-import BackToHomePage from "../components/navigation/BackToHomePage";
+import BackToHomepage from "../components/navigation/BackToHomepage";
 import scrollToDiv from "../helpers/scrollToDiv";
 import { useEffect } from "react";
 
@@ -35,7 +35,7 @@ const ContactPage = () => {
         ))}
       </ul>
       <div id="contact"></div>
-      <BackToHomePage />
+      <BackToHomepage />
     </div>
   );
 };

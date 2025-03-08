@@ -5,7 +5,9 @@ $colors: (
     50: #f6f4f0,
     100: #004aad,
   ),
-  secondary: (),
+  secondary: (
+    50: #ffffff,
+  ),
 );
 
 @each $color, $value in map-get($colors, primary) {

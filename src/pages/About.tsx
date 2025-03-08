@@ -4,6 +4,7 @@ import scrollToDiv from "../helpers/scrollToDiv";
 import ProfileImage from "../assets/images/portfolio-img.jpg";
 
 import { useEffect } from "react";
+import BackToHomepage from "../components/navigation/BackToHomepage";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
+      <BackToHomepage />
     </div>
   );
 };

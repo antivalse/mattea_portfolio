@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 
-const BackToHomePage = () => {
+const BackToHomepage = () => {
   return (
     <Link to="/" className="link link--primary uppercase mt-20">
       Go to homepage
@@ -10,4 +10,4 @@ const BackToHomePage = () => {
   );
 };
 
-export default BackToHomePage;
+export default BackToHomepage;
