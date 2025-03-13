@@ -25,6 +25,10 @@ $secondary-100: map-get(map-get(c.$colors, secondary), 100);
   }
 }
 
+.description {
+  font-family: "Courier New", Courier, monospace;
+}
+
 .link {
   &--primary {
     color: $secondary-100;

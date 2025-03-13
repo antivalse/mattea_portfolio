@@ -13,24 +13,31 @@ const ProjectsPage = () => {
   const projectImages = [
     {
       id: 1,
-      description: "Collaboration project - html | css | javascript",
+      description: "html | css | typescript",
       href: "https://deft-flan-8c51cf.netlify.app/",
       src: "src/assets/images/project-images/candyshopimg.png",
-      title: "Bortakväll - Online Candy Shop",
+      title: "bortakväll - online candy shop",
+    },
+    {
+      id: 4,
+      description: "react | typescript | html | css | firebase",
+      href: "https://speedysnail.netlify.app/",
+      src: "src/assets/images/project-images/speedysnail.png",
+      title: "speedy snail - day planner for kids",
     },
     {
       id: 2,
-      description: "School assignment - html | css | javascript",
-      href: "https://gleeful-bunny-50bbaf.netlify.app/",
-      src: "src/assets/images/project-images/guessinggameimg.png",
-      title: "Guess the Name Game - Quiz Game",
+      description: "react | typescript | html | css",
+      href: "https://relaxed-lebkuchen-8d216e.netlify.app/",
+      src: "src/assets/images/project-images/galactivearchivesimg.png",
+      title: "the galactic archives",
     },
     {
       id: 3,
-      description: "School assignment - html | css | react",
+      description: "react | typescript | html | css",
       href: "https://incredible-squirrel-e5e5fe.netlify.app/",
       src: "src/assets/images/project-images/tmdbimg.png",
-      title: "The Movie Database",
+      title: "the movie database",
     },
   ];
 
@@ -45,19 +52,19 @@ const ProjectsPage = () => {
               className="projects__card flex flex-col justify-between gap-5"
             >
               <p>{project.title}</p>
-              <a href={project.href}>
-                <img src={project.src} alt={project.title} />
+              <a href={project.href} className="projects__card__image-wrapper">
+                <img
+                  src={project.src}
+                  alt={project.title}
+                  className="projects__card__image"
+                />
+                <div className="projects__card__overlay">
+                  <span className="projects__card__overlay-text">
+                    View Project →
+                  </span>
+                </div>
               </a>
-              <div className="text-right">
-                <a
-                  className="projects__card__link-btn self-end"
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Project →
-                </a>
-              </div>
+              <p className="description text-right">{project.description}</p>
             </li>
           ))}
         </ul>
