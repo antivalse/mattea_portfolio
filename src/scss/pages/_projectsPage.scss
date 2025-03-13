@@ -17,6 +17,8 @@ $secondary-50: map-get(map-get(c.$colors, secondary), 50);
     padding: 0.5rem 0.5rem 1rem 0.5rem;
     font-family: "Courier New", Courier, monospace;
     position: relative;
+    border: 1px dotted $primary-100;
+    border-radius: 0.5rem;
 
     &__image-wrapper {
       position: relative;

@@ -47,6 +47,13 @@ const ProjectsPage = () => {
       src: "src/assets/images/project-images/killdasvirusimg.png",
       title: "kill das virus - two player real-time game",
     },
+    {
+      id: 6,
+      description: "react | typescript | html | css | firebase",
+      href: "https://github.com/antivalse/hangry_app",
+      src: "src/assets/images/project-images/hangryappimg.png",
+      title: "hangry app - restaurant finder (google maps api)",
+    },
   ];
 
   return (
@@ -60,7 +67,12 @@ const ProjectsPage = () => {
               className="projects__card flex flex-col justify-between gap-5"
             >
               <p>{project.title}</p>
-              <a href={project.href} className="projects__card__image-wrapper">
+              <a
+                href={project.href}
+                className="projects__card__image-wrapper"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={project.src}
                   alt={project.title}
