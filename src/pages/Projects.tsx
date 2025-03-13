@@ -39,13 +39,21 @@ const ProjectsPage = () => {
       src: "src/assets/images/project-images/tmdbimg.png",
       title: "the movie database",
     },
+    {
+      id: 5,
+      description:
+        "node.js | typescript | socket.io | prisma | mongodb | html | css", // Node.js, TypeScript, Socket.io, Prisma och MongoDB
+      href: "https://github.com/antivalse/kill_das_virus_game",
+      src: "src/assets/images/project-images/killdasvirusimg.png",
+      title: "kill das virus - two player real-time game",
+    },
   ];
 
   return (
     <div className="page-container projects">
       <h1 className="header header--page mb-10">projects</h1>
       <div id="projects-content">
-        <ul className="flex gap-5 mt-20">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-20">
           {projectImages.map((project) => (
             <li
               key={project.id}
