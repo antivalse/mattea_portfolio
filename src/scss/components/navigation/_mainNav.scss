@@ -1,6 +1,8 @@
 /* Imports from Components Folder */
 
 @use "../../variables/colors" as c;
+@use "../../utils/mixins" as m;
+
 @import "../../globals/fonts";
 
 $primary-100: map-get(map-get(c.$colors, primary), 100);
@@ -14,7 +16,22 @@ $primary-100: map-get(map-get(c.$colors, primary), 100);
 
   &__logo {
     font-family: $elika-gorica;
-    font-size: 14rem;
+    font-size: 5rem;
+    line-height: 1;
+    @include m.breakpoint-up("sm") {
+      font-size: 7.5rem;
+    }
+
+    @include m.breakpoint-up("sm-md") {
+      font-size: 8.5rem;
+    }
+    @include m.breakpoint-up("md-lg") {
+      font-size: 12rem;
+    }
+
+    @include m.breakpoint-up("lg") {
+      font-size: 14rem;
+    }
   }
 
   &__links {

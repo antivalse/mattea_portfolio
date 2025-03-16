@@ -12,7 +12,7 @@ const MainNavbar = () => {
   return (
     <>
       <div className="navbar">
-        <h1 className="navbar__logo">
+        <h1 className="navbar__logo text-center">
           <Link to="/">mattea saxell</Link>
         </h1>
         <p className="uppercase">front-end developer</p>

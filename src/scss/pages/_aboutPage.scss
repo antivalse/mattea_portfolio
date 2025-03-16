@@ -1,6 +1,8 @@
 /* About Page Styles */
 
 @use "../variables/colors" as c;
+@use "../utils/mixins" as m;
+
 @import "../globals/fonts";
 
 $primary-50: map-get(map-get(c.$colors, primary), 50);
@@ -9,6 +11,9 @@ $primary-100: map-get(map-get(c.$colors, primary), 100);
 .about-container {
   background-color: $primary-100;
   color: $primary-50;
-  width: 50%;
+  width: 90%;
   border-radius: 1.25rem;
+  @include m.breakpoint-up("sm") {
+    width: 50%;
+  }
 }

@@ -20,7 +20,7 @@ const AboutPage = () => {
         </div>
         <div className="about-text col-span-2 flex flex-col justify-center">
           <p id="about" className="body body--secondary mt-5">
-            I’m Mattea, a Front End Developer with experience in backend
+            Hello! I’m Mattea, a Front End Developer with experience in backend
             development. I’m curious and dedicated to creating user-friendly and
             accessible experiences through development and design.{" "}
           </p>
