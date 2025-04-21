@@ -15,7 +15,7 @@ const MainNavbar = () => {
         <h1 className="navbar__logo text-center">
           <Link to="/">mattea saxell</Link>
         </h1>
-        <p className="uppercase">front-end developer</p>
+        <p className="uppercase">web developer</p>
         <ul className="navbar__links uppercase flex mt-10">
           {navbarLinks.map((link) => (
             <li
